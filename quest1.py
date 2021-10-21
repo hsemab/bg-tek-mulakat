@@ -31,4 +31,5 @@ if __name__ == "__main__":
           run.tetrahedral(num)  
           break       
       except ValueError:
-          continue
+        print("Yanlış giriş yaptınız.")
+        continue

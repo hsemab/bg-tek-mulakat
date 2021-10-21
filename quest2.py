@@ -1,16 +1,16 @@
-#ikinci dereceden denklem: ax2+bx+c
+#ikinci dereceden denklem: ax^2+bx+c
 while True:
-    print("İkinci dereceden denklem: ax2+bx+c")
+    print("İkinci dereceden denklem: ax^2+bx+c")
 
     try: # a ve b 0 girilmesin??
         a = int(input("a :"))
         b = int(input("b :"))
         c = int(input("c :"))
     
-        delta=pow(b,2)-4*a*c #kökleri bulmak için gereken delta sayısı
+        delta=pow(b,2)-(4*a*c) #kökleri bulmak için gereken delta sayısı
         #print(delta)
-        root1=(-b+delta**0.5)/(2*a) 
-        root2=(-b-delta**0.5)/(2*a)
+        root1=(-b+pow(delta,0.5))/(2*a) 
+        root2=(-b-pow(delta,0.5))/(2*a)
 
         print("Denklemin 1. kökü:", "{:g}".format(root1)) #uzun ondalık kısmın kısaltılması
         print("Denklemin 2. kökü:", "{:g}".format(root2))
@@ -20,5 +20,5 @@ while True:
         print("a=0 olamaz!")
         continue
     except ValueError:
-        print("Lütfen sadece sayı girin!")
+        print("Lütfen sadece sayı giriniz!")
         continue
